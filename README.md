@@ -35,8 +35,7 @@
 ###AsynCallJS Solves This Complex Usecase With Prototypes And Callbacks!
  - *first* is the simplicity
  - *second* is that all of your methods are now async-capable, out-of-the-box, and requires no modification.
- - *third* is the asynchronous "done callback", and the flat, easy to use design-patten, that [avoids-the-callback-hell scenario](http://callbackhell.com/).
-
+ - *third* is the asynchronous "done callback", and the flat, easy to use design-patten, that [avoids-the-callback-hell scenario](http://callbackhell.com/). <img src="https://i.imgur.com/6HEwGff.gif" alt="no callback hell!"/>
 <hr/>
 
 ###How Can *I* Make AsynCallJS Better?
