@@ -1,4 +1,4 @@
-/* AsynCallJS 1.3.5 - Asynchronous Every Method. Modifying Nothing.
+/* AsynCallJS 1.3.5 - JavaScript's Easiest Async-RunSupport For Methods.
  * https://github.com/eladkarako/AsynCallJS/
  * 
  * Copyright (c) 2015 Elad Karako (eladkarako.com)
