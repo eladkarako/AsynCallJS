@@ -19,7 +19,9 @@
     };
 
     sqr.asyncall(5);
-
+    
+    //output #1:  "parameters used:" [5]
+    //output #2:  "result:" 25
 <hr/>
 
 ###Async on method? What is all about?
