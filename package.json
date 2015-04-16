@@ -1,25 +1,25 @@
 {
-   "name":          "AsynCallJS"
-  ,"version":       "1.3.5"
-  ,"description":   "JavaScript's Easiest Async-Run Support For Methods."
-  ,"filename":      "asyncall.min.js"
-  ,"keywords":      ["AsynCallJS"
-                   , "javascript"
-                   , "async"
-                   , "non-blocking"
-                   , "client"
-                   , "browser" ]
-  ,"license":       "MIT"
-  ,"homepage":      "http://icompile.eladkarako.com/asyncalljs/"
-  ,"author":        "Elad Karako <icompile.eladkarako.com>"
-  ,"main":          ["asyncall.min.js"]
-  ,"repositories":  [{ "type":   "git"
-                      ,"url":    "https://github.com/eladkarako/AsynCallJS.git"}]
-  ,"bugs":            {"url":    "https://github.com/eladkarako/AsynCallJS/issues"}   
+   "name":             "AsynCallJS"
+  ,"version":          "1.3.5"
+  ,"description":      "JavaScript's Easiest Async-Run Support For Methods."
+  ,"filename":         "asyncall.min.js"
+  ,"keywords":        ["AsynCallJS"
+                     , "javascript"
+                     , "async"
+                     , "non-blocking"
+                     , "client"
+                     , "browser" ]
+  ,"license":          "MIT"
+  ,"homepage":         "http://icompile.eladkarako.com/asyncalljs/"
+  ,"author":           "Elad Karako <icompile.eladkarako.com>"
+  ,"main":            ["asyncall.min.js"]
+  ,"repositories":  [{ "type":      "git"
+                      ,"url":       "https://github.com/eladkarako/AsynCallJS.git"}]
+  ,"bugs":            {"url":       "https://github.com/eladkarako/AsynCallJS/issues"}   
   ,"dependencies":    {}
   ,"devDependencies": {}
-  ,"autoupdate":   {"source":    "git"
-                  , "target":    "git://github.com/eladkarako/AsynCallJS.git"
-                  , "basePath":  ""
-                  , "files":     ["asyncall.min.js","asyncall.js"]}
+  ,"autoupdate":      {"source":    "git"
+                     , "target":    "git://github.com/eladkarako/AsynCallJS.git"
+                     , "basePath":  ""
+                     , "files":     ["asyncall.min.js","asyncall.js"]}
 }
