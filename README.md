@@ -1,8 +1,8 @@
 # AsynCallJS
-## JavaScript's Easiest Async-RunSupport For Methods.
+## JavaScript's Easiest Async-Run Support For Methods.
 #### It's Easy As <img src="http://i.imgur.com/nupHZdW.png" alt="pie"/>
 
-    /* AsynCallJS 1.3.5 - JavaScript's Easiest Async-RunSupport For Methods.
+    /* AsynCallJS 1.3.5 - JavaScript's Easiest Async-Run Support For Methods.
      * https://github.com/eladkarako/AsynCallJS/
      *
      * Copyright (c) 2015 Elad Karako (eladkarako.com)
