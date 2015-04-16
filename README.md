@@ -1,7 +1,8 @@
 # AsynCallJS
 Run Every Method Asynchronous, Change Nothing.
 
-    /* AsynCall.JS 1.3.5 - Asynchronous Every Method. Modifying Nothing.
+    /* AsynCallJS 1.3.5 - Asynchronous Every Method. Modifying Nothing.
+     * https://github.com/eladkarako/AsynCallJS/
      *
      * Copyright (c) 2015 Elad Karako (eladkarako.com)
      * Dual licensed under the MIT (MIT-LICENSE.txt)
