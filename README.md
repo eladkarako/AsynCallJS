@@ -10,8 +10,7 @@
      * and GPL (GPL-LICENSE.txt) licenses.
      */
 
-#####It Makes All Of Your Methods Support Async-Execution <img src="https://i.imgur.com/ISy881a.png" alt=""/>, No Fuss.
-
+#####It Makes All Of Your Methods Magically Support Async-Execution <img src="https://i.imgur.com/ISy881a.png" alt=""/>, No Fuss.
 ###<img src="https://i.imgur.com/jCAWARC.png" alt=""/> Example First
     function sqr(n) {
       return Math.pow(n, 2);
