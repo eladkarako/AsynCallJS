@@ -1,9 +1,8 @@
 # AsynCallJS
-## A Smart JavaScript Library,
-## That Adds Background Async-Execution Support, To All Of Your Existing Mehtods.
-### It's Easy As <img src="http://i.imgur.com/nupHZdW.png" alt="pie"/>
+## JavaScript's Easiest Async-RunSupport For Methods.
+#### It's Easy As <img src="http://i.imgur.com/nupHZdW.png" alt="pie"/>
 
-    /* AsynCallJS 1.3.5 - Run Every Method Asynchronously, Change Nothing.
+    /* AsynCallJS 1.3.5 - JavaScript's Easiest Async-RunSupport For Methods.
      * https://github.com/eladkarako/AsynCallJS/
      *
      * Copyright (c) 2015 Elad Karako (eladkarako.com)
@@ -11,6 +10,7 @@
      * and GPL (GPL-LICENSE.txt) licenses.
      */
 
+#####It Makes All Of Your Methods Support Async-Execution, No Modification Needed.
 
 ###Example First
     function sqr(n) {
