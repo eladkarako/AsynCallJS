@@ -51,4 +51,5 @@
 <hr/>
 
 -  thanks for using for free/fork'ing/donating for the project.
--  live long and prosper.
+-  live long and prosper. <img src="https://i.imgur.com/4KFKvH2.png" alt="Yeah!!!" title="Yeah!!!"/>
+
