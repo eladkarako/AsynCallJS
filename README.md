@@ -1,4 +1,8 @@
 # AsynCallJS
+## A Smart JavaScript Library,
+## That Adds Background Async-Execution Support, To All Of Your Existing Mehtods.
+### It's Easy As <img src="http://i.imgur.com/nupHZdW.png" alt="pie"/>
+
     /* AsynCallJS 1.3.5 - Run Every Method Asynchronously, Change Nothing.
      * https://github.com/eladkarako/AsynCallJS/
      *
