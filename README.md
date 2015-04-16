@@ -12,7 +12,7 @@
 
 #####It Makes All Of Your Methods Support Async-Execution, No Modification Needed.
 
-###Example First
+###<img src="https://i.imgur.com/jCAWARC.png" alt=""/> Example First
     function sqr(n) {
       return Math.pow(n, 2);
     }
