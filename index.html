@@ -1,0 +1,154 @@
+<!doctype html>
+<!-- The Time Machine GitHub pages theme was designed and developed by Jon Rohan, on Feb 7, 2012. -->
+<!-- Follow him for fun. http://twitter.com/jonrohan. Tail his code on https://github.com/jonrohan -->
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <link rel="stylesheet" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/script.js"></script>
+
+  <title>AsynCallJS</title>
+  <meta name="description" content="JavaScript&#39;s Easiest Async-Run Support For Methods. It Makes All Of Your Methods Magically Support Async-Execution, No Fuss.">
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header>
+      <h1 class="title">AsynCallJS</h1>
+    </header>
+    <div id="container">
+      <p class="tagline">JavaScript&#39;s Easiest Async-Run Support For Methods. It Makes All Of Your Methods Magically Support Async-Execution, No Fuss.</p>
+      <div id="main" role="main">
+        <div class="download-bar">
+        <div class="inner">
+          <a href="https://github.com/eladkarako/AsynCallJS/tarball/master" class="download-button tar"><span>Download</span></a>
+          <a href="https://github.com/eladkarako/AsynCallJS/zipball/master" class="download-button zip"><span>Download</span></a>
+          <a href="https://github.com/eladkarako/AsynCallJS" class="code">View AsynCallJS on GitHub</a>
+        </div>
+        <span class="blc"></span><span class="trc"></span>
+        </div>
+        <article class="markdown-body">
+          <h1>
+<a id="asyncalljs" class="anchor" href="#asyncalljs" aria-hidden="true"><span class="octicon octicon-link"></span></a>AsynCallJS</h1>
+
+<h2>
+<a id="javascripts-easiest-async-run-support-for-methods" class="anchor" href="#javascripts-easiest-async-run-support-for-methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>JavaScript's Easiest Async-Run Support For Methods.</h2>
+
+<h4>
+<a id="its-easy-as-" class="anchor" href="#its-easy-as-" aria-hidden="true"><span class="octicon octicon-link"></span></a>It's Easy As <img src="https://i.imgur.com/nupHZdW.png" alt="pie">
+</h4>
+
+<pre><code>/* AsynCallJS 1.3.5 - JavaScript's Easiest Async-Run Support For Methods.
+ * https://github.com/eladkarako/AsynCallJS/
+ *
+ * Copyright (c) 2015 Elad Karako (eladkarako.com)
+ * Dual licensed under the MIT (MIT-LICENSE.txt)
+ * and GPL (GPL-LICENSE.txt) licenses.
+ */
+</code></pre>
+
+<h5>
+<a id="it-makes-all-of-your-methods-magically-support-async-execution--no-fuss" class="anchor" href="#it-makes-all-of-your-methods-magically-support-async-execution--no-fuss" aria-hidden="true"><span class="octicon octicon-link"></span></a>It Makes All Of Your Methods Magically Support Async-Execution <img src="https://i.imgur.com/ISy881a.png" alt="">, No Fuss.</h5>
+
+<h3>
+<a id="-example-first" class="anchor" href="#-example-first" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+<img src="https://i.imgur.com/jCAWARC.png" alt=""> Example First</h3>
+
+<pre><code>function sqr(n) {
+  return Math.pow(n, 2);
+}
+
+sqr.asyncall_callback = function (result, args) {
+  console.log("parameters used:", args);
+  console.log("result:", result);
+};
+
+sqr.asyncall(5);
+
+//output #1:  "parameters used:" [5]
+//output #2:  "result:" 25
+</code></pre>
+
+<hr>
+
+<h3>
+<a id="async-run-why-and-how" class="anchor" href="#async-run-why-and-how" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+<img src="https://i.imgur.com/aB2Ug86.png" alt="">Async Run? Why And How?</h3>
+
+<ul>
+<li>running methods that modify the presentation, is long descited would be best practice run-from a context-free timer,</li>
+<li>although <code>setTimeout</code> does not implemented <code>Threading</code> it is not intended to (in my implementation, at least).</li>
+<li>adding a simple-enough wrap for <strong>each</strong> function, providing a clear, promise-like code-writing,</li>
+<li>you can find numerous reasons why you should use <code>AsynCall</code> logic,</li>
+</ul>
+
+<hr>
+
+<h3>
+<a id="asyncalljs-solves-this-complex-usecase-with-prototypes-and-callbacks" class="anchor" href="#asyncalljs-solves-this-complex-usecase-with-prototypes-and-callbacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+<img src="https://i.imgur.com/3Cgm5bd.png" alt="think!" title="think!">AsynCallJS Solves This Complex Usecase With Prototypes And Callbacks!</h3>
+
+<ul>
+<li>
+<em>first</em> is the simplicity</li>
+<li>
+<em>second</em> is that all of your methods are now async-capable, out-of-the-box, and requires no modification.</li>
+<li>
+<em>third</em> is the asynchronous "done callback", and the flat, easy to use design-patten.</li>
+<li>
+<em>fourth</em>: AsynCallJS <a href="http://callbackhell.com/">avoids-the-callback-hell scenario</a> <br>
+<img src="https://i.imgur.com/6HEwGff.gif" alt="no callback hell!" title="no callback hell!">
+</li>
+</ul>
+
+<hr>
+
+<h3>
+<a id="how-can-i-make-asyncalljs-better" class="anchor" href="#how-can-i-make-asyncalljs-better" aria-hidden="true"><span class="octicon octicon-link"></span></a>
+<img src="https://i.imgur.com/8J8aUkr.png" title="help! superman! oh wait nevermind I've got this baseball bat..##BOOM## owwwwwww :..(" alt="help! superman! oh wait nevermind I've got this baseball bat..##BOOM## owwwwwww :..(">How Can <em>I</em> Make AsynCallJS Better?</h3>
+
+<ul>
+<li>Share, Fork <img src="https://i.imgur.com/Jwn2fGl.png" alt="mmmm... fork...no.. wait...!" title="mmmm... fork...no.. wait...!">, Comment, EMail, Commit (not necessarily in that order..)</li>
+<li>
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=7994YX29444PA&amp;lc=IL&amp;item_name=GitHub%20AsynCall%2eJS%20Donation&amp;amount=5%2e00&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donate_SM%2egif%3aNonHosted"><img src="https://i.imgur.com/ilcj8Ij.png?1" alt="donate"></a> - it will help you sleep better at night, seriously!</li>
+</ul>
+
+<hr>
+
+<ul>
+<li> thanks for using for free/fork'ing/donating for the project.</li>
+<li> live long and prosper.
+<br><img src="https://i.imgur.com/4KFKvH2.png" alt="Yeah!!!" title="Yeah!!!">
+</li>
+</ul>
+        </article>
+      </div>
+    </div>
+    <footer>
+      <div class="owner">
+      <p><a href="https://github.com/eladkarako" class="avatar"><img src="https://avatars2.githubusercontent.com/u/415238?v=3&amp;s=60" width="48" height="48"></a> <a href="https://github.com/eladkarako">eladkarako</a> maintains <a href="https://github.com/eladkarako/AsynCallJS">AsynCallJS</a></p>
+
+
+      </div>
+      <div class="creds">
+        <small>This page generated using <a href="https://pages.github.com/">GitHub Pages</a><br>theme by <a href="https://twitter.com/jonrohan/">Jon Rohan</a></small>
+      </div>
+    </footer>
+  </div>
+  <div class="current-section">
+    <a href="#top">Scroll to top</a>
+    <a href="https://github.com/eladkarako/AsynCallJS/tarball/master" class="tar">tar</a><a href="https://github.com/eladkarako/AsynCallJS/zipball/master" class="zip">zip</a><a href="" class="code">source code</a>
+    <p class="name"></p>
+  </div>
+
+  
+</body>
+</html>
