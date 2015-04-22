@@ -12,6 +12,7 @@
 
 #####It Makes All Of Your Methods Magically Support Async-Execution <img src="https://i.imgur.com/ISy881a.png" alt=""/>, No Fuss.
 ###<img src="https://i.imgur.com/jCAWARC.png" alt=""/> Example First
+```js
     function sqr(n) {
       return Math.pow(n, 2);
     }
@@ -25,6 +26,8 @@
     
     //output #1:  "parameters used:" [5]
     //output #2:  "result:" 25
+```
+
 <hr/>
 
 ###<img src="https://i.imgur.com/aB2Ug86.png" alt=""/>Async Run? Why And How?
@@ -67,7 +70,7 @@
 ###Workflow, Inside View.
 ####How Does It Work?
 #####Have a look on a modified version of the code, using console.log("..where I am..") to emphasize how the code will execute.
-
+```js
     Function.prototype.asyncall = function () {
       console.log("asyncall enter");
       var _this = this
@@ -92,7 +95,7 @@
       console.log("function body");
       return Math.pow(n, 2);
     }
-
+```
 
 running `sqr.asyncall(10).asyncall_callback = function(){console.log("callback")}`
 
