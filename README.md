@@ -54,3 +54,60 @@
 -  live long and prosper.
 <br/><img src="https://i.imgur.com/4KFKvH2.png" alt="Yeah!!!" title="Yeah!!!"/>
 
+
+
+<br/>
+<br/>
+<hr/>
+<br/>
+<hr/>
+<br/>
+<br/>
+
+###Workflow, Inside View.
+####How Does It Work?
+#####Have a look on a modified version of the code, using console.log("..where I am..") to emphasize how the code will execute.
+
+    Function.prototype.asyncall = function () {
+      console.log("asyncall enter");
+      var _this = this
+        , _arguments = arguments
+        , _result
+        ;
+
+      setTimeout(function () {
+        console.log("asyncall: before function body");
+        _result = _this.apply(_this, _arguments);
+        setTimeout(function () {
+          console.log("asyncall: before callback");
+          _this.asyncall_callback(_result, _arguments)
+        }, 10);
+      }, 10);
+
+      console.log("asyncall exit");
+      return _this;
+    };
+
+    function sqr(n) {
+      console.log("function body");
+      return Math.pow(n, 2);
+    }
+
+
+running `sqr.asyncall(10).asyncall_callback = function(){console.log("callback")}`
+
+will output:
+<ol>
+<li>asyncall enter</li>
+<li>
+asyncall exit<br/>
+( function `sqr.asyncall.asyncall_callback()` is defined )
+</li>
+<li>asyncall: before function body</li>
+<li>function body</li>
+<li>asyncall: before callback</li>
+<li>callback</li>
+</ol>
+
+
+
